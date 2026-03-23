@@ -1,56 +1,37 @@
 ---
-title: "This is about page ✋"
+title: "Hi! I'm Jiu"
 ---
-# Version 1.1
 
-## English Guide
+안녕하세요, 클라우드와 DevOps를 공부하는 정지우입니다.
 
-Hello! This section is dedicated to introducing your blog. Here, you can showcase various information to your visitors, such as a blog introduction, personal profile, resume, portfolio, and more.
+주로 AWS, Docker, Kubernetes, GitHub Actions 같은 주제를 다루고, 프로젝트를 하면서 겪은 문제와 해결 과정을 기록합니다.
 
-### Writing Guide
+완성된 지식만 정리하기보다, 문제를 해결하는 과정과 시행착오도 함께 남기려고 합니다.
 
-To edit this page, modify the `/contents/about/index.md` file. You can write it in the same way as any other post. The path to this file cannot be changed.
 
-The Markdown document for the About page only contains a single frontmatter called `title`. The `title` frontmatter will be displayed as the title at the top of the About page.
+### Skills
+- AWS, GCP
+- Docker, Kubernetes, GitHub Actions
+- Python, Java, Shell Scripting
+- Spring Boot, MySQL
+- Linux, Git
 
-### Disabling the About Page
 
-```json
-module.exports = {
+### Projects
+- AWS 기반 실시간 채팅 서비스
+- 서버리스 FaaS 플랫폼
+- EKS 배포 자동화 플랫폼
+- 텍스트 기반 3D 텍스처 편집 파이프라인 연구
 
-  // ...
+### Awards
+- Softbank Hackathon 2025 본선 우수상 (2위)
+- 한국컴퓨터그래픽스학회 2025 학술대회 우수학부포스터상
 
-  useAbout: false, // 👈
+### Education
+- 이화여자대학교 컴퓨터공학과 (2021.03 - )
+- 독일 RWTH 아헨 공과대학 (2023.03 - 2024.02)
 
-  // ...
-
-}
-```
-
-You can disable the About page by setting the `useAbout` value to false in the `blog-config.js` file. If disabled, the tab in the blog header will be hidden, and visitors will not be able to access this page via the `/about` URL.
-
-## 한국어 가이드
-
-안녕하세요. 이 곳은 블로그를 소개하기 위한 공간입니다. 블로그 또는 자신에 대한 소개부터 이력서, 포트폴리오 등 다양한 정보를 이곳에서 방문자들에게 보여줄 수 있습니다.
-
-### 작성 가이드
-
-이 페이지를 편집하려면, `/contents/about/index.md` 파일을 수정하면 됩니다. 다른 포스팅을 작성하는 것과 동일한 방식으로 작성할 수 있습니다. 이 파일의 경로는 변경할 수 없습니다.
-
-About 페이지의 마크다운 문서는 오직 `title` 이라는 하나의 frontmatter 만 가지고 있습니다. `title` frontmatter 는 About 페이지 상단 제목으로 표시됩니다.
-
-### 비활성화
-
-```json
-module.exports = {
-
-  // ...
-
-  useAbout: false, // 👈
-
-  // ...
-
-}
-```
-
-`blog-config.js` 파일의 `useAbout` 값을 `false` 로 설정하여 About 페이지를 비활성화 할 수 있습니다. 비활성화 된다면, 블로그 상단에 존재하는 탭이 숨겨지고, `/about` 경로로 이 페이지에 접속할 수도 없게 됩니다.
+### Affiliation
+- Cloud Club (2026.03 - )
+- AWS Cloud Club (2025.03 - 2025.08)
+- Google Developer Group on Campus (2024.09 - 2025.08)
