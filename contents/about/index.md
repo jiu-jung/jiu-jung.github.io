@@ -1,6 +1,7 @@
 ---
 title: "This is about page ✋"
 ---
+# Version 1.1
 
 ## English Guide
 
