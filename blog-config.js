@@ -14,7 +14,7 @@ module.exports = {
     repo: "jiu-jung/jiu-jung.github.io",
     repoId: "R_kgDORufRGA",
     category: "Comments",
-    categoryId: "DIC_kwDORufRGM4C5F9V",
+    categoryId: "DIC_kwDORufRGM4C5GRW",
     mapping: "pathname",
     strict: "0",
     reactionsEnabled: "1",
