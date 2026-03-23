@@ -8,11 +8,13 @@ module.exports = {
     linkedIn: "https://www.linkedin.com/in/jiwoo-jung-cs/",
     email: "mailto:jiu.jung.cs@gmail.com",
   },
+  
   useAbout: true,
-  // See https://giscus.app/
   giscus: {
     repo: "jiu-jung/jiu-jung.github.io",
     repoId: "R_kgDORufRGA",
+    category: "Comments",
+    categoryId: "DIC_kwDORufRGM4C5F9V",
     mapping: "pathname",
     strict: "0",
     reactionsEnabled: "1",
