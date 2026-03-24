@@ -18,9 +18,9 @@ title: "인프라와 자동화를 공부하는 Jiu입니다."
 - 텍스트 기반 3D 텍스처 편집 연구
 
 ### Journey
-- **Cloud Club** (2026-)
+- **Cloud Club** (2026 ~ )
 - **AWS Cloud Club** (2025)
-- **Google Developer Group on Campus** (2024-2025)
+- **Google Developer Group on Campus** (2024 ~ 2025)
 - **독일 RWTH 아헨 공과대학** (2023)
-- **이대산악부** (2021-)
-- **이화여자대학교 컴퓨터공학과** (2021-)
+- **이대산악부** (2021 ~ )
+- **이화여자대학교 컴퓨터공학과** (2021 ~ )
