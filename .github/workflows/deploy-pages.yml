@@ -32,8 +32,13 @@ jobs:
       - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
+      # - name: Build site
+      #   run: npm run build
+
       - name: Build site
-        run: npm run build
+        run: |
+          npx gatsby clean
+          npm run build -- --prefix-paths    
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
