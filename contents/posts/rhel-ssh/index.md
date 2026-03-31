@@ -100,7 +100,7 @@ ip addr
 이제 macOS에서 iTerm을 열고 아래처럼 접속한다.
 
 ```bash
-ssh <user_name>`@<vm_ip>
+ssh <user_name>@<vm_ip>
 ```
 
 처음 접속할 때는 fingerprint 확인 메시지가 뜰 수 있는데, `yes`를 입력하면 된다.  
