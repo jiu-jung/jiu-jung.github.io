@@ -11,13 +11,15 @@ series:
 
 엔터프라이즈 환경의 리눅스를 실습해보고 싶어서, **UTM**을 이용해 **RHEL 10** 가상머신을 설치했다.
 
-이번 글에서는 **UTM 설치**, **RHEL 초기 설정**, **Red Hat 구독 등록**까지의 과정을 정리한다.
+이번 글에서는 아래 순서로 설치 과정을 정리한다.
+1. [환경 세팅 (UTM VM 생성)](https://jiu-jung.github.io/rhel-installation/#1-환경-세팅)
+2. [RHEL 설치 및 초기 설정](https://jiu-jung.github.io/rhel-installation/#2-RHEL-설치-및-초기-설정)
+3. [Red Hat 구독 등록](https://jiu-jung.github.io/rhel-installation/#3-구독-등록)
 
 <br>
 
----
-
 ## 0. 설치 환경
+---
 
 - MacBook pro M5 (10 코어, 24GB 메모리, 512GB 스토리지)
 - UTM
@@ -25,9 +27,8 @@ series:
 
 <br>
 
----
-
 ## 1. 환경 세팅
+---
 
 #### 1) UTM 설치
 
@@ -81,9 +82,8 @@ UTM을 실행한 뒤 아래 순서대로 가상머신을 만든다.
 
 <br>
 
----
-
 ## 2. RHEL 설치 및 초기 설정
+---
 
 설치 과정은 잘 정리된 [블로그](https://velog.io/@calintzcs/%EC%84%A4%EC%B9%98-Red-Hat-Enterprise-Linux-8.x-Minimal-%EC%84%A4%EC%B9%98LegacyUEFI)를 참고하여 진행했다.
 
@@ -162,10 +162,8 @@ UTM을 실행한 뒤 아래 순서대로 가상머신을 만든다.
 
 <br>
 
----
-
-
 ## 2*. 트러블슈팅
+---
 
 #### 1) display output is not active
 
@@ -195,10 +193,8 @@ UTM을 실행한 뒤 아래 순서대로 가상머신을 만든다.
 <br>
 
 
----
-
-
 ## 3. 구독 등록
+---
 
 RHEL은 패키지 설치와 업데이트를 위해 Red Hat 계정 구독 등록이 필요하다.
 
