@@ -1,12 +1,12 @@
 ---
-title: "iTerm에서 RHEL에 SSH로 접속하기"
-description: "iTerm에서 RHEL에 SSH로 접속하기"
+title: "리눅스 가상머신 SSH로 접속하기"
+description: "리눅스 가상머신 SSH로 접속하기"
 date: 2026-03-21
 update: 2026-03-21
 tags:
   - Linux
   - RHEL
-series:
+series: "Red Hat Enterprise Linux 스터디"
 ---
 
 

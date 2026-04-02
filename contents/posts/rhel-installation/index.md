@@ -6,7 +6,7 @@ update: 2026-03-20
 tags:
   - Linux
   - RHEL
-series: 
+series: "Red Hat Enterprise Linux 스터디"
 ---
 
 엔터프라이즈 환경의 리눅스를 실습해보고 싶어서, **UTM**을 이용해 **RHEL 10** 가상머신을 설치했다.

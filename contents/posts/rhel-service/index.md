@@ -1,22 +1,23 @@
 ---
-title: "리눅스 서비스 운영의 핵심: systemd, systemctl, unit file 정리"
-description: "리눅스 서비스 운영의 핵심: systemd, systemctl, unit file 정리"
+title: "리눅스 서비스 관리: systemd, systemctl, unit file"
+description: "리눅스 서비스 관리: systemd, systemctl, unit file"
 date: 2026-04-01
 update: 2026-04-01
 tags:
   - Linux
   - RHEL
-series:
+series: "Red Hat Enterprise Linux 스터디"
+
 ---
 
 
 리눅스 운영 환경에서는 단순히 **프로세스가 실행 중인가**만 보는 것으로는 충분하지 않다.
 실제로 운영에서는 **서비스가 정상적으로 관리되고 있는가**를 기준으로 시스템을 바라보게 된다.
 
-예를 들어 어떤 프로그램이 죽었을 때, 단순 프로세스라면 종료된 것으로 끝나지만, 서비스로 관리되고 있다면 자동으로 다시 시작될 수 있다. 또 부팅 시 자동 실행, 권한 분리, 환경 변수 주입, 로그 확인까지 모두 서비스 단위에서 관리된다.
+예를 들어 어떤 프로그램이 죽었을 때, 단순 프로세스라면 종료된 것으로 끝나지만 서비스로 관리되고 있다면 자동으로 다시 시작될 수 있다. 또 부팅 시 자동 실행, 권한 분리, 환경 변수 주입, 로그 확인까지 모두 서비스 단위에서 관리된다.
 
 이 글에서는 리눅스 서비스 운영의 핵심 개념인 다음 네 가지를 운영 관점에서 정리한다.
-- [서비스: 리눅스 운영의 중심](https://jiu-jung.github.io/rhel-service/#서비스-리눅스-운영의-중심)
+- [**서비스**: 리눅스 운영의 중심](https://jiu-jung.github.io/rhel-service/#서비스-리눅스-운영의-중심)
 - [`systemd`: 서비스 관리의 중심](https://jiu-jung.github.io/rhel-service/#systemd-리눅스-서비스-관리의-중심)
 - [`systemctl`: 서비스 제어 인터페이스](https://jiu-jung.github.io/rhel-service/#systemctl-서비스-제어-인터페이스)
 - [`unit file`: 서비스 운영 정책 문서](https://jiu-jung.github.io/rhel-service/#Unit-File-서비스-운영-정책-문서)
@@ -28,13 +29,13 @@ series:
 
 > **리눅스 운영은 프로세스가 아니라 서비스 단위로 제어한다.**
 
-#### 1) 프로세스와 서비스는 무엇이 다를까
+### 1) 프로세스와 서비스는 무엇이 다를까
 리눅스를 처음 배울 때는 보통 프로세스의 개념과 관리 방법을 먼저 배운다.  
 운영 관점에서는 여기서 한 단계 더 나아가 **서비스**라는 관리 단위를 이해해야 한다.
 
 <br>
 
-#### 2) 프로세스 vs 서비스
+### 2) 프로세스 vs 서비스
 
 | 구분    | 프로세스 (Process) | 서비스 (Service) |
 | ----- | -------------- | ------------- |
@@ -51,7 +52,7 @@ series:
 
 <br>
 
-#### 3) 서비스
+### 3) 서비스
 따라서 서비스는 단순히 프로그램을 띄우는 개념이 아니다. 보통 아래와 같은 운영 요소를 함께 포함한다.
 
 - 자동 재시작
@@ -70,7 +71,7 @@ series:
 > **systemd**는 현대 리눅스 배포판에서 서비스 관리를 담당하는 표준 시스템이다.
 
 
-#### 1) systemd의 역할
+### 1) systemd의 역할
 
 `systemd`는 시스템 전반의 실행 흐름을 관리하는 중심 역할을 맡는다.
 
@@ -91,7 +92,7 @@ series:
 
 <br>
 
-#### 2) systemd의 특징
+### 2) systemd의 특징
 
 - Red Hat 계열에서 도입되었고, 현재는 Ubuntu를 포함한 대부분의 주요 리눅스 배포판에서 사용된다.
 - 운영 중인 서비스의 상태를 판단할 때 사실상 기준점 역할을 한다.
@@ -105,7 +106,7 @@ series:
 > `systemctl`은 **`systemd`를 제어하기 위한 CLI 도구**이다.  
 
 
-#### 1) 주요 명령어
+### 1) 주요 명령어
 
 ```bash
 # 상태 확인
@@ -126,7 +127,7 @@ systemctl disable <service>
 <br>
 
 
-#### 2) `systemctl status`
+### 2) `systemctl status`
 
 ![](./source/systemctl_status.png)
 
@@ -160,7 +161,7 @@ systemctl disable <service>
 > `Unit File`은 서비스가 어떤 운영 정책 아래 움직이는지를 판단할 수 있는 문서이다.
 
 
-#### 1) Unit
+### 1) Unit
 `systemd`를 이해하려면 **Unit** 개념도 알아야 한다.
 **Unit은 `systemd`가 관리하는 시스템 구성 요소**를 의미한다.  
 서비스뿐 아니라 마운트 지점, 소켓, 타겟 등도 모두 Unit으로 표현된다.
@@ -173,7 +174,7 @@ systemctl disable <service>
 
 <br>
 
-#### 2) Unit File: 서비스의 실행 정의
+### 2) Unit File: 서비스의 실행 정의
 
 “everything is a file” 이라는 말처럼,
 `systemd`에서도 **서비스 운영 정책이 파일 형태로 정의**된다.
@@ -186,7 +187,7 @@ systemctl disable <service>
 
 <br>
 
-#### 3) Unit의 종류
+### 3) Unit의 종류
 
 |유닛 유형|확장자|설명|
 |---|---|---|
@@ -200,7 +201,7 @@ systemctl disable <service>
 
 <br>
 
-#### 4) Unit File의 위치
+### 4) Unit File의 위치
 
 Unit file은 보통 다음 디렉토리들에서 관리된다.
 
@@ -215,7 +216,7 @@ Unit file은 보통 다음 디렉토리들에서 관리된다.
 
 <br>
 
-#### 5) Unit File 구조 읽기
+### 5) Unit File 구조 읽기
 
 unit file은 보통 세 개의 블록으로 나뉜다.
 
@@ -259,7 +260,7 @@ WantedBy=multi-user.target
 
 <br>
 
-#### 6) Unit File 확인 방법
+### 6) Unit File 확인 방법
 
 1. 서비스의 unit file 보기
 ```bash
@@ -281,7 +282,7 @@ Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; preset: enabled)
 
 <br>
 
-#### 7) 실제 예시로 보는 `sshd` Unit File
+### 7) 실제 예시로 보는 `sshd` Unit File
 
 ![](./source/systemctl_cat.png)
 
@@ -295,7 +296,7 @@ Loaded: loaded (/usr/lib/systemd/system/sshd.service; enabled; preset: enabled)
 
 <br>
 
-#### 8) Unit File 수정 후 꼭 해야 하는 작업
+### 8) Unit File 수정 후 꼭 해야 하는 작업
 
 unit file을 수정한 뒤에는 아래 명령이 필요하다.
 
