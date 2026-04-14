@@ -10,11 +10,12 @@ series: "Red Hat Enterprise Linux 스터디"
 ---
 
 
-RHEL 10을 **Minimal Install**로 설치한 뒤 CLI 환경에서 실습을 시작했는데, **스크롤이 안돼서 이전 출력 내용을 볼 수 없어서 불편했다.**
+RHEL 10을 **Minimal Install**로 설치한 뒤 CLI 환경에서 실습을 시작했는데,  
+터미널 스크롤이 되지 않아 이전 출력 내용을 확인하기가 불편했다.
 
-그래서 **VM 안에 SSH 서버를 설치하고, macOS의 iTerm으로 접속해서 작업하는 방식**으로 바꿔봤다.
+그래서 **VM 안에 SSH 서버를 설치하고, macOS의 iTerm으로 접속해서 작업하는 방식**으로 환경을 바꿨다.
 
-이번 글에서는 아래 순서대로 설정한 과정을 정리한다.
+이번 글에서는 그 설정 과정을 순서대로 정리한다.
 
 1. [일반 사용자 생성](https://jiu-jung.github.io/rhel-ssh/#1-일반-사용자-생성)
 2. [SSH 서버 설치 및 실행](https://jiu-jung.github.io/rhel-ssh/#2-SSH-서버-설치-및-실행)
