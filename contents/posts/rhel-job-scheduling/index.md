@@ -20,7 +20,7 @@ series: "Red Hat Enterprise Linux 스터디"
 
 - [**cron**: 주기 작업 스케줄러](https://jiu-jung.github.io/rhel-job-scheduling/#cron-주기-작업-스케줄러)
 - [**at**: 단발성 작업 스케줄러](https://jiu-jung.github.io/rhel-job-scheduling/#at-단발성-작업-스케줄러)
-- [**systemd** 환경의 작업 스케줄링](https://jiu-jung.github.io/rhel-job-scheduling/#systemd-환경에서-작업-스케줄링의-동작)
+- [**systemd** 환경의 작업 스케줄링](https://jiu-jung.github.io/rhel-job-scheduling/#systemd-환경의-작업-스케줄링)
 
 <br>
 
