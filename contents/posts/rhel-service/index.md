@@ -387,7 +387,7 @@ systemctl restart <service>
 <br>
 <br>
 
-## 왜 `kill` 했는데 프로세스가 다시 뜰까?
+## 왜 kill 했는데 프로세스가 다시 뜰까?
 ---
 
 <br>

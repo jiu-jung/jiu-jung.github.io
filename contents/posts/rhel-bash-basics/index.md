@@ -1,8 +1,8 @@
 ---
-title: "Bash Shell Script: 기본 문법과 실행 구조"
-description: "Bash Shell Script: 기본 문법과 실행 구조"
-date: 2026-04-15
-update: 2026-04-15
+title: "Bash Script: 기본 문법과 실행 구조"
+description: "Bash Script: 기본 문법과 실행 구조"
+date: 2026-04-14
+update: 2026-04-14
 tags:
   - Linux
   - RHEL
